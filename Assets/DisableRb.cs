@@ -14,7 +14,7 @@ public class DisableRb : MonoBehaviour
     {
         if (GameManager.Instance.firstPickup)
         {
-            GameManager.Instance.ShowHelp(helpMessage, 7);
+            GameManager.Instance.ShowHelp(helpMessage, 10);
             GameManager.Instance.firstPickup = false;
         }
 
