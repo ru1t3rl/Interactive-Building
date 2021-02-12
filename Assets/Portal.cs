@@ -8,8 +8,7 @@ public class Portal : MonoBehaviour
     [SerializeField] LayerMask ghostLayer;
     
     private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log($"A gameObject with the layer {other.gameObject.layer} hit me ");
+    {        
         if(ghostLayer.ToInteger() == other.gameObject.layer)
         {
             other.gameObject.SetActive(false);
